@@ -1,0 +1,24 @@
+@import "./styles/variables/_mixins.scss";
+:root {
+  font-family: "Madera W01 Bold";
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.container{
+  max-width: 480px;
+  margin:  0 auto;
+  height: auto;
+}
+button{
+  cursor: pointer;
+}

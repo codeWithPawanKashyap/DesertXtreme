@@ -1,0 +1,35 @@
+@import "../styles/variables/mixins";
+.main-layout {
+   
+    width: 60%;
+    // display: flex;
+    margin: auto;
+    // background-color: aquamarine;
+    background-color: #ffffff;
+    height: 100vh !important;
+    // align-items: center;
+    @include mediaQuery(phone){
+        width: 100%;
+    }
+    
+.content{
+    width: 100%;
+    padding-top: 40px;
+    // margin-bottom: 65px;
+    // height: calc(100vh - 140px);
+    // overflow-y: scroll;
+}
+}
+.footer{
+    position: sticky;
+    width: 480px;
+    z-index: 9999;
+    background-color: white;
+    // display: flex;
+    margin: auto;
+
+    bottom: 0%;
+    @include mediaQuery(phone){
+        width: 100%;
+    }
+}

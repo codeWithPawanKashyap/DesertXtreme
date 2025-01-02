@@ -1,0 +1,74 @@
+@import "../../styles/variables/mixins";
+.container {
+  .hero-sec {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/main.jpg");
+    position: relative;
+    background-size: 100% 100%;
+
+    @include mediaQuery(phone) {
+    }
+    .heading-logo{
+      position: absolute;
+      transform: translateX(-50%);
+      top: 10px;
+      left: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 10%;
+
+      .country-logo {
+        margin: 0 auto;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .sub-title {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .btn-explore {
+      width: 210px;
+      height: 55px;
+      margin: 0 auto;
+      background-color: white;
+      position: absolute;
+      transform: translateX(-50%);
+      bottom: 5%;
+      left: 50%;
+      font-size: 21px;
+      letter-spacing: 1px;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: #612d11;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+.navbar-layout{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  top: 0%;
+  background-color: #ffffff;
+  z-index: 9999;
+  border-bottom: 1px solid #EAEAEA;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.25);
+}

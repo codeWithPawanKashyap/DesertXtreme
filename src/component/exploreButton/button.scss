@@ -1,0 +1,19 @@
+// .background #dd7f3b
+// #ffffff
+// #f6f3f1
+.enquire-button {
+    background-color: #dd7f3b; 
+    color: #ffffff; 
+    padding: 10px 20px;
+   border-radius: 5px;
+    border: 2px solid #f6f3f1; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow */
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+  }
+  
+  .enquire-button:hover {
+    background-color: #f1802f; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* More prominent shadow on hover */
+  }

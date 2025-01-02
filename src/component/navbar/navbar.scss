@@ -1,0 +1,42 @@
+.main-nav{
+    width: 100%;
+  
+   //  background: white;
+}
+.nav-logo{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+.whts-app{
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   white-space: nowrap;
+   gap: 10px;
+   color: black;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+
+}
+.nav-logo
+{
+   .logo{
+
+      width: 45%;
+   }
+   .whts-icon{
+      width: 80px;
+      padding-top: 5px;
+   }
+
+   
+} 
+.nav-logo svg{
+   font-size: 24px;
+    color: #e9544f;
+    opacity: 0.2;
+    
+    }

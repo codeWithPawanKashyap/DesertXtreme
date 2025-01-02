@@ -1,0 +1,136 @@
+.similar-package-card-col{
+    width: 100%;
+    border-radius: 5px;
+filter: drop-shadow(0px 6px 24.5px rgba(22,19,22,0.09));
+background-color: #ffffff;
+border: 0px solid #000000;
+overflow: hidden;
+.similar-card-img{
+        width: 100%;
+    height: 200px;
+    background-size: cover;
+    
+    position: relative;
+    .heart-icon{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 100px;
+      z-index: 999;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      svg{
+        color: black;
+        font-size: 14px;
+      }
+    }
+}
+.similar-card-content{
+    padding: 10px;
+    background-color: white;
+    h4{
+        margin: 0%;
+        font-size: 18px;
+color: #464646;
+font-weight: bold;
+line-height: 22px;
+    }
+    p{
+        margin: 0%;
+        margin-top: 5px;
+        font-size: 10px;
+        color: #8c8c8c;
+        text-transform: uppercase;
+
+    }
+    hr{
+        margin-top: 30px;
+        height: 1px;
+background-color: #dddddd;
+border: 0px solid #000000;
+    }
+    .price{
+        color:black;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 6%;
+        .aed{
+          margin: 0%;
+          padding: 0%;
+          color: #29a482;
+          font-size: 20px;
+
+        }
+        .per-night{
+          margin: 0%;
+          padding: 0%;
+          padding-top: 5px;
+          font-size: 10px;
+          color: #767171;
+          font-weight: 100;
+          font-family: sans-serif;
+        }
+        
+      }
+      .xtreme{
+        color: #767171;
+        font-size: 10px;
+        font-weight: 100;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        svg{
+          color: red;
+          font-size: 12px;
+          margin-bottom: 3px;
+          margin-left: 10px;
+          margin-right: 5px;
+        }
+      }
+      .per-person-price{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: 12px;
+            margin: 0%;
+            color: #c5c5c5;
+            font-weight: 100;
+            font-family: sans-serif;
+            margin-top: 5px;
+        }
+        h4{
+            color: #464646;
+            font-size: 16px;
+        }
+      }
+    }
+    .similar-card-book-btn{
+      width: 100%;
+      margin-bottom: 5px;
+      button{
+          width: 100%;
+          // padding: 10px;
+          cursor: pointer;
+          height: 55px;
+          background-color: #df723c;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          color: white;
+          font-weight: bold;
+          font-size: 14px;
+
+      }
+    }
+}

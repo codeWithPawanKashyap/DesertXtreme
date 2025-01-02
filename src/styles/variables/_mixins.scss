@@ -1,0 +1,86 @@
+
+@font-face{
+    font-family: "YourFontName";
+    src: url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.eot");
+    src: url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.eot?#iefix")format("embedded-opentype"),
+        url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.woff")format("woff"),
+        url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.woff2")format("woff2"),
+        url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.ttf")format("truetype"),
+        url("../../assets/font/b9a86a749f6403ffcbf023ac838674c6.svg#Madera W01 Bold")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+  }
+// TRANSITION MIXIN
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+// TRANSFORM MIXIN
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+// BOX SHADOW MIXIN
+@mixin boxShadow($boxShadow) {
+    -webkit-box-shadow: $boxShadow;
+    -moz-box-shadow: $boxShadow;
+    box-shadow: $boxShadow;
+}
+
+// MEDIA QUERIES WITH BREAKPOINTS
+@mixin mediaQuery($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint==mini-desktop {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint==desktop {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint==lg-desktop {
+        @media (min-width: 1400px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet-sm-desktop {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint==phone-tab-sm-desktop {
+        @media (min-width: 0px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab-sm-lg-desktop {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $breakpoint==sm-lg-desktop {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+}

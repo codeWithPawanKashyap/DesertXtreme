@@ -1,0 +1,125 @@
+@import "../../styles/variables/mixins";
+.banenrSecttop {
+    width: 100%;
+  
+  }
+  .banner {
+    position: relative;
+    .manuWapper {
+      position: absolute;
+      z-index: 999999;
+      width: 100%;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      z-index: 10px;
+      display: flex;
+      flex-direction: column;
+  
+      .whatupbox {
+        display: flex;
+        justify-content: end;
+        padding: 8px 50px;
+        span {
+          a {
+            display: flex;
+            align-items: center;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 21px;
+            p{
+              margin: 0%;
+              padding-bottom: 10px;
+            }
+          }
+    
+        }
+      }
+      .navbart {
+        display: flex;
+        justify-content: center;
+        ul {
+          display: flex;
+          gap: 35px;
+          align-items: center;
+          li {
+            list-style: none;
+            text-transform: uppercase;
+            a {
+              color: black;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    .top-banner-bottom-rectangle {
+      position: absolute;
+      width: 80%;
+      max-width: 961px;
+      height: 101px;
+      filter: drop-shadow(0 0 29.5px rgba(5, 6, 6, 0.14));
+      background-color: #fcfcfc;
+      bottom: -7%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      @include mediaQuery(desktop){
+      bottom: -5%;
+      }
+      // @include media(largeHug){
+      // bottom: -2%;
+      // }
+      ul {
+        display: flex;
+        align-items: center;
+        margin: 0%;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0%;
+        .navbar-brand{
+          display: flex;
+          align-items: center;
+        }
+        li {
+          width: 25%;
+          list-style: none;
+          text-transform: uppercase;
+          color: black;
+          border-right: 1px solid black;
+          display: flex;
+          justify-content: center;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: black;
+          font-weight: bold;
+  
+          &:nth-child(4) {
+            border-right: none;
+            justify-content: left;
+            padding-left: 20px;
+          }
+          span {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: green;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .img-fluid {
+      width: 100%;
+    }
+  }
